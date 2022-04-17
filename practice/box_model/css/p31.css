@@ -1,0 +1,20 @@
+body {
+    border: 1px solid black;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background-color: red;
+    position: relative;
+    top: 250px;
+}
+
+.box2 {
+    background-color: yellow;
+    position: static;  
+    /* static이 default 값 */
+}

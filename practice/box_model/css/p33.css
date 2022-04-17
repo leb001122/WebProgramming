@@ -1,0 +1,31 @@
+body {
+    border: 1px solid black;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+/* absolute */
+/* position이 static이 아닌 (가장 가까운) 부모/조상 요소가 기준 */
+/* 일반적으로 부모요소는 relative, 자식 요소는 absolute로 설정 */
+.box1 {
+    background-color: red;
+    position: absolute;
+    top: 250px;
+}
+
+.box2 {
+    background-color: yellow;
+    position: static;  
+    /* static이 default 값 */
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    top: 50px;
+}

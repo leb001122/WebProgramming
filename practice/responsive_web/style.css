@@ -1,0 +1,54 @@
+.layout {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+aside {
+    flex-basis: 160px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #f0f0ff;
+}
+
+article {
+    flex-basis: 680px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #ffe0e0;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+
+.item {
+    min-height: 150px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 23.5%;
+}
+
+.item:nth-child(1) { background-color: violet; }
+.item:nth-child(2) { background-color: violet; }
+.item:nth-child(3) { background-color: violet; }
+.item:nth-child(4) { background-color: violet; }
+
+@media screen and (max-width:1023px) {
+    .item {
+        flex-basis: 49%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .item {
+        flex-basis: 100%;
+    }
+}
+

@@ -1,0 +1,25 @@
+.layout {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 10px;
+    background-color: yellow;
+}
+
+.item {
+    flex-basis: 200px;
+    background-color: green;
+    flex: 0 40%;
+    margin: 2px;
+}
+
+.item:nth-child(2) {
+    z-index: 1;
+    transform: scale(2);
+}

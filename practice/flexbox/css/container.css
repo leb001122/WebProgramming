@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-end;
+    border: 1px solid black;
+    height: 200px;
+
+}
+
+/* flex-wrap이 nowrap인 경우 align-content는 무의미  */
+/* wrap인 경우에는 align-wrap은 적용안되고 align-content가  적용됨*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin: 10px;
+    width: 200px;
+    border: 1px solid black;
+
+
+}

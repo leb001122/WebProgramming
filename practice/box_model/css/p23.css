@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    height: 90px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    line-height: 90px;
+
+}
+
+.content {
+    width: auto;
+    border: 1px solid black;
+    height: 90px;
+}
+
+.logo {
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 90px;   
+    height: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+}
+

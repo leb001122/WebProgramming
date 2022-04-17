@@ -1,0 +1,57 @@
+ul {
+    color: blue;
+    list-style-type: none;
+    
+    /* list-style 속성은 항목 모양의 종류(그그 문장앞에 표시되는거), 위치, 항목에 넣을 이미지를 한꺼번에 지정할 수 있다. 
+    list-style-type, list-style-position, list-style-image
+
+    list-style: disc outside none;     -> 모두 기본값 
+    list-style: square url("bcat.png");*/
+}
+
+
+/* 
+
+1. 전체 선택자 (*)
+
+2. 태그 선택자 (태그만)
+
+3. 클래스 선택자(.)
+- 문서 안에서 여러 요소에 스타일 적용.
+
+4. id 선택자 (#)
+- 문서 안에서 하나의 요소에만 스타일 적용. 
+
+5. 그룹선택자 (, 로 묶음)
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 모든 요소의 마진과 패딩은 기본적으로 0이다. */
+}
+
+h2 {
+    color: green;
+}
+
+.redtext {
+    color: red;
+}
+
+.bluetext {
+    color: blue;
+}
+
+#container {
+    background: #ff6a00;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto; /*가로로 중앙에 배치*/
+}
+
+h1, h2 {
+    text-align: center;
+}

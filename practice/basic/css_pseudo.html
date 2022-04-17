@@ -1,0 +1,47 @@
+<!-- 사용자 동작에 반응하는 가상 클래스 
+    1. link - 방문하지 않은 링크에 스타일 적용
+    2. visited - 방문한 링크에 스타일 적용
+    3. active - 웹 요소를 활성화했을 때 스타일 적용.  사용자의 마우스가 해당 요소를 클릭하는 순간부터 떼는 순간까지 요소의 스타일 변경
+    4. hover - 웹 요소에 마우스 커서를 올려놓을 떄의 스타일 적용. 마우스가 해당 요소 위에 있을 때 요소의 스타일 변경
+    5. focus - 웹 요소에 초점이 맞추어졌을 때의 스타일 적용. 사용자의 마우스가 해당 요소를 클릭하면 요소의 스타일 변경
+
+    UI 요소 상태에 따른 가상 클래스
+    1. enabled, disabled - 요소를 사용할 수 있을 때와 없을 떄의 스타일 지정
+    2. checked - 라디오 박스나 체크 박스에서 항목을 선택했을 때의 스타일 지정
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  
+        .movie1  {
+            list-style-type: decimal;
+        }
+        .movie2 {
+            list-style-type: upper-roman;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <ol class="movie1">
+        <li>명량</li>
+        <li>극한직업</li>
+        <li>신과함꼐</li>
+        <li>국제시장</li>
+    </ol>
+    <ol class="movie2">
+        <li>명량</li>
+        <li>극한직업</li>
+        <li>신과함꼐</li>
+        <li>국제시장</li>
+    </ol>
+</body>
+</html>
