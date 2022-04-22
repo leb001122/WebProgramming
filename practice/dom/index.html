@@ -37,5 +37,46 @@
         <p id="demo2"></p>
     </div>
 
+    <!-- 요소 조작 - 속성 가져오기 -->
+    <div id="myDiv" class="bd" title="Body text" lang="en" dir="Itr">속성가져오기</div>
+    <button onclick="getAttributesByProperty()">property로 속성 가져오기</button>
+    <button onclick="getAttributesByMethod()">method로 속성 가져오기</button>
+    <p id="demo3"></p>
+    
+
+    <input id="button" type="button" onclick="alert('clicked')" value="go!">
+    <a id="anchor" href="http://cs.kumoh.ac.kr/cs/index.do" >컴소공</a>
+    <br>
+    <button onclick="getAttributes()">속성 가져오기2</button>
+    <br>
+    <!-- 요소 조작 - 속성 설정하기 -->
+    <button onclick="setAttributeByProperty()">property로 속성 설정하기</button>
+    <button onclick="setAttributeByMethod()">method로 속성 설정하기</button>
+
+
+    <br>
+    <h1>Hello World</h1>
+    <h1>Hello Js</h1>
+    <button onclick="buttonFunction()">클래스 적용</button>
+
+    <br><br>
+    <!-- 클래스 속성 다루기 -->
+    <div id="classModi" class="first"></div>
+    <button onclick="setClass()">클래스 속성 다루기</button>
+    <button onclick="setClass2()">second제거</button>
+
+    <br><br>
+    <!-- 요소 추가/삭제/교체 -->
+    <h2>축제하면 가장 먼저 생각나는 것</h2>
+    <ol>
+        <li class="festival">가수의 무대</li>
+        <li class="festival">주점</li>
+        <li class="festival">이벤트</li>
+    </ol>
+    <button onclick="addElement()">요소 추가</button>
+    <button onclick="removeElement()">요소 삭제</button>
+    <button onclick="replaceElement()">요소 교체</button>
+
 </body>
+
 </html>
