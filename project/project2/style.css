@@ -1,3 +1,53 @@
+body {
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+}
+  
+section {
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;  
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;     
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,18 +59,20 @@ body {
 
 .slide {
     display: none;
+    margin: 0 auto;
 }
 
 
 .slideshow-container {
-    max-width: 1000px;
+    width: auto;
+    max-width: 800px;
     position: relative;
     margin: auto;
+
 }
 
 .img {
     vertical-align: middle;
-    width: 100%;
 }
 
 .numbertext {
@@ -28,6 +80,7 @@ body {
     font-size: 18px;
     position: absolute;
     top: 0;
+    margin: 5px;
 }
 
 .prev, .next {
@@ -64,4 +117,52 @@ body {
     .text {
         font-size: 11px
     }
+}
+
+
+
+h4 {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.amount {
+    display: block;
+    text-align: right;
+    margin: 0 10px 10px;
+}
+
+.accordian {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.active, .accordian:hover {
+    background-color: #ccc;
+}
+
+.accordians {
+    margin-bottom: 20px;
+}
+
+#selectbox {
+    margin-top: 5px;
+}
+
+li {
+    list-style: none;
 }

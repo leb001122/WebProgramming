@@ -6,30 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주문</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
 </head>
+
 <body>
-    <section class="slideshow-container">
-        <div class="slide">
-            <div class="numbertext">1 / 3</div>
-            <img src="image/1.jpg">
+
+
+
+    <section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">음식</a>
+            <a href="#">가전</a>
+            <a href="#">가구</a>
+            <a href="#">캠핑용품</a>
         </div>
-
-        <div class="slide">
-            <div class="numbertext">2 / 3</div>
-            <img src="image/2.jpg">
-        </div>
-
-        <div class="slide">
-            <div class="numbertext">3 / 3</div>
-            <img src="image/3.jpg">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
-
-    </section>
+          
+        <span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="numbertext">1 / 3</div>
+                <img src="image/1.jpg" style="width: 100%">
+            </div>
     
+            <div class="slide">
+                <div class="numbertext">2 / 3</div>
+                <img src="image/2.jpg" style="width: 100%">
+            </div>
+    
+            <div class="slide">
+                <div class="numbertext">3 / 3</div>
+                <img src="image/3.jpg" style="width: 100%">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+    
+        </div>
+    
+    
+    
+        <fieldset>
+            <legend>상세정보</legend>
+            <h4>알프랑 그늘막 팝업 스피드 원터치 텐트</h4>
+            <div class="accordians">
+                <button class="accordian">판매자 정보</button>
+                <div class="panel">
+                    <p>
+                        금오공과대학교<br>소프트웨어공학과<br>김텐트
+                    </p>
+                </div>
+        
+                <button class="accordian">상품 정보</button>
+                <div class="panel">
+                    <p>
+                        최신텐트<br>원터치<br>방수
+                    </p>
+                </div>
+        
+                <button class="accordian">주문 정보</button>
+                <div class="panel">
+                    <select name="options" id="selectbox">
+                        <option value="" selected>선택</option>
+                        <option value="option-a">A. 스피드 원터치 팝업텐드(3~4인용)</option>
+                        <option value="option-b">B. 5초 원터치 텐트(3인용) (+10,000원)</option>
+                        <option value="option-c">C. 5초 원터치 텐트(5인용) (+20,000원)</option>
+                    </select>
+                    <ul id="seleted-list">
+                    </ul>
+                </div>
+        
+            </div>
+            
+            <span id="amount">총 상품금액 0원</span>
+            <button id="buy-btn">구매하기</button>
+        </fieldset>
+           
+    </section>
+
+    
+
 </body>
+
 </html>

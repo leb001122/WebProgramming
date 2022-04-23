@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .remove {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <h1>할 일 목록</h1>
+            <button id="addBtn">리스트 추가</button>
+        </div>
+        <ul id="sampleList">
+            <li id="list1">기존 리스트 1</li>
+            <li id="list2">기존 리스트 2</li>
+            <li id="list3">기존 리스트 3</li>
+        </ul>
+    </div>
+
+    <a id="toHome" href=" https://cs.kumoh.ac.kr/cs/index.do">컴소공</a>
+
+
+    <script>
+        window.onload = () => {
+            let lis = document.querySelectorAll('li');
+            //lis.forEach((li) => li.addEventListener("click", toggleList));
+            let ul = document.querySelector("#sampleList");
+            ul.addEventListener('click', toggleList, false);
+
+            let addItemBtn = document.getElementById('addBtn');
+            addItemBtn.addEventListener('click', addItem);
+        }
+
+
+        function addItem() {
+            let sampleList = document.getElementById('sampleList');
+            let listLen = sampleList.children.length;
+            let li = document.createElement('li');
+            li.setAttribute('id', 'list' + (listLen + 1));
+            li.appendChild(document.createTextNode('새 리스트 ' + (listLen + 1)));
+            sampleList.appendChild(li);
+        }
+
+        function toggleList(event) {
+            let clickedLi = document.getElementById(event.target.id);
+            clickedLi.classList.toggle("remove");
+        }
+
+        document.getElementById("toHome").addEventListener("click", function (event) {
+            event.preventDefault()
+        });
+
+    </script>
+</body>
+
+</html>
