@@ -5,22 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/item.css">
+
+    <style>
+        .layout {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .flexbox {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-wrap: nowrap; 
+            gap: 0;
+        }
+        .item {
+            border: 1px solid black;
+            min-height: 150px;
+            flex-basis: 200px; 
+
+            /* 줄어드는 것 막음 */
+            flex-shrink: 0; 
+        }
+    
+    </style>
 </head>
 <body>
     <div class="layout">
         <div class="flexbox">
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
-            <div class="item">ITEM</div>
+            <div class="item">ITEM1</div>
+            <div class="item">ITEM2</div>
+            <div class="item">ITEM3</div>
+            <div class="item">ITEM4</div>
+    
         </div>
+    
     </div>
     
 </body>
