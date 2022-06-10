@@ -4,9 +4,13 @@ import MenuCard from "./MenuCard";
 const MenuRow = (props) => {
     return (
         <div className="menu-container-row">
-            <MenuCard menuInfo={props.menuInfo[0]}></MenuCard>    
-            <MenuCard menuInfo={props.menuInfo[1]}></MenuCard>    
-            <MenuCard menuInfo={props.menuInfo[2]}></MenuCard>    
+            {props.menuInfo.map((m, index) => (
+                <MenuCard 
+                    menuInfo={m}  
+                    setClickedMenu={props.setClickedMenu}
+                    cardOrder={index}
+                ></MenuCard>    
+            ))}
         </div>
     );
 }

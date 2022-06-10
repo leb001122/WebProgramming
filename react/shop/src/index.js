@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ComponentStudy from './ComponentStudy';
 import Hansot from './Hansot';
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hansot/>
+    <BrowserRouter>
+       <Hansot/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

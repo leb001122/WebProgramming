@@ -1,6 +1,18 @@
+import {Link} from "react-router-dom";
+
 const MenuCard = (props) => {
     return (
-        <div className="menu-card">
+      <Link to="/detail">
+       <div className="menu-card" data-order={props.cardOrder}
+        onClick={
+          (event) => {
+            const order = event.currentTarget.dataset.order;
+            console.log("clicked");
+            console.log(order);
+            props.setClickedMenu(order);
+          }
+        }
+       > 
         <div className="menu-img">
           <img src={"./img/"+props.menuInfo.imgName} alt={props.menuInfo.menuName} />
         </div>
@@ -9,6 +21,8 @@ const MenuCard = (props) => {
           <h4>{props.menuInfo.price}</h4>
         </div>
       </div>
+      </Link>
+       
     );
 }
 
