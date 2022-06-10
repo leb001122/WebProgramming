@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black;  */
+    border: 1px solid black; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -211,54 +211,25 @@ ol, ul {
 }
 
 /* 무비차트 */
+/* movieChartBeScreen_wrap > swiper-wrapper >  */
 
-.movieChartBeScreen_wrap  {
-    clear: none;   
-    float: none;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(232,232,232,0.37));
-}
-
-#container .contents {
+#container{
     width: 980px;
     height: 100%;
     margin: 0 auto;
 }
 
-.movieChartBeScreen_wrap .contents {
-    overflow: hidden;
-    margin-left: 30px;
-    padding: 50px 30px 60px;
-}
-
-.movieChart_list .swiper {
-    overflow: visible;
-    position: relative;
-}
-
-.swiper {
-    margin-left : auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-}
-
-/* .movieChart_list .swiper-wrpper {
-    counter-reset: movie-chart-counter;
-} */
-
-.swiper-wrapper  {
-    position: relative;
+.movieChartBeScreen_wrap  {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     width: 100%;
     height: 100%;
-    z-index: 1;
-    display: block;
     transition-property: transform;
     box-sizing: content-box;
     transform: translate3d(0px, 0px, 0px);
     transition-duration: 0ms;
+    justify-items: center;
 }
 
 .swiper-slide {
@@ -273,22 +244,13 @@ ol, ul {
 .img_wrap {
     position: relative;
     overflow: hidden;
-}
-
-/* .movieChart_list .swiper-wrapper .swiper-slide
-.img_wrap : bnefor{
-
-} */
-
-.movieChart_list .swiper-wrapper .swiper-slide .img_wrap {
-    overflow: hidden;
     position: relative;
-    width: 170px;
+    /* width: 170px; */
     height: 234px;
     border-radius: 10px;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .img_wrap:before {
     content: '';
     display: block;
@@ -301,11 +263,8 @@ ol, ul {
     z-index: 2;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide .img_wrap img{
+.swiper-slide .img_wrap img{
     z-index: 1;
-}
-
-.img_wrap > img {
     position: absolute;
     left: 0;
     top: 50%;
@@ -314,13 +273,13 @@ ol, ul {
     transform: translate(0, -50%);
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .movie_info_wrap {
     display: flex;
     flex-wrap: wrap;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide .movie_info_wrap 
+.swiper-slide .movie_info_wrap 
 .movieName {
     display: block;
     flex-basis: 100%;
@@ -334,7 +293,7 @@ ol, ul {
     white-space: nowrap;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .movie_info_wrap  > span {
     display: block;
     float: left;
@@ -344,20 +303,20 @@ ol, ul {
     line-height: 1.214em;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .movie_info_wrap  > span img {
     width: 16px;
     height: 16px;
     vertical-align: top;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .movie_info_wrap  > span ~ span {
     position: relative;
     padding-left: 16px;
 }
 
-.movieChart_list .swiper-wrapper .swiper-slide
+.swiper-slide
 .movie_info_wrap  > span ~ span :before{ 
     content: '';
     display: block;
@@ -370,7 +329,7 @@ ol, ul {
     background-color: #ededed;
 }
 
-.movieChart_list .swiper-button-next {
+.swiper-button-next {
     overflow: hidden;
     right: -20px;
     top: calc(50% - 26px);
@@ -397,10 +356,17 @@ ol, ul {
     justify-content: center;
 } 
 
-.movieChart_list .swiper-button-next:after {
+.swiper-button-next:after {
     content: '';
     width: 40px;
     height: 40px;
     background: rgba(255,255,255,0.8) url("../public/img/next_button.png")
                 center/9px 13px scroll no-repeat;
+}
+
+
+/* 이벤트 */
+
+.event_wrap {
+    padding: 60px 0 6px;
 }

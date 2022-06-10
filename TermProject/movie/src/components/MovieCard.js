@@ -1,10 +1,9 @@
 import "../Movie.css";
 
 const MovieCard = (props) => {
-    console.log("movieCard : " + props.movieInfo.movieId);
     
     return (
-        <div className="swiper-slide swiper-slide-movie swiper-slide-active" 
+        <div className="swiper-slide" 
             data-order={props.movieInfo.movieOrder}
         > 
             <div className="img_wrap">
