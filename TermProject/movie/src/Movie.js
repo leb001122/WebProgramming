@@ -138,7 +138,7 @@ const movie4 = {
 // };
  
 const movieArr = [movie1, movie2, movie3, movie4];
-const eventArr = [event1, event2, event3, event4];
+const eventArr = [event1, event2, event3];
 
 // const movieArr = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8];
 
@@ -147,18 +147,17 @@ function Movie() {
     return (
         <div id="cgvwrap">
             <div className="header"> 
-
                 <Header></Header>
                 <NavBar></NavBar>
             </div>
             <div id="container">
                 <Movies
                     movieArr={movieArr}
-                    setClickedMovie={setClickedMovie}>
-                </Movies>
-                <Events>
+                    setClickedMovie={setClickedMovie}
+                ></Movies>
+                <Events
                     eventArr={eventArr}
-                </Events>
+                ></Events>
             </div>
         </div>
     );
